@@ -82,6 +82,41 @@ a {
   margin: 0;
 }
 
+.nav-toggle {
+  display: none;
+  width: 40px;
+  height: 40px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: #ffffff;
+  padding: 0;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 4px;
+  cursor: pointer;
+}
+
+.nav-toggle span {
+  width: 16px;
+  height: 2px;
+  border-radius: 999px;
+  background: var(--text);
+  transition: transform 140ms ease, opacity 140ms ease;
+}
+
+.nav-toggle[aria-expanded="true"] span:nth-child(1) {
+  transform: translateY(6px) rotate(45deg);
+}
+
+.nav-toggle[aria-expanded="true"] span:nth-child(2) {
+  opacity: 0;
+}
+
+.nav-toggle[aria-expanded="true"] span:nth-child(3) {
+  transform: translateY(-6px) rotate(-45deg);
+}
+
 .nav-links a {
   padding: 0.5rem 0.8rem;
   border-radius: 999px;
@@ -308,6 +343,43 @@ a {
   font-size: 0.88rem;
   color: var(--neutral-green-text);
   letter-spacing: 0.02em;
+}
+
+.xp-tech-group {
+  border: 0;
+  background: transparent;
+  padding: 0;
+  box-shadow: none;
+  min-height: auto;
+  border-radius: 0;
+}
+
+.xp-tech-group > h4 {
+  margin: 0 0 0.7rem;
+}
+
+.xp-body > .xp-tech-group {
+  border: 0 !important;
+  background: transparent !important;
+  padding: 0 !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+}
+
+.xp-skill-groups {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.65rem;
+}
+
+.xp-skill-groups .skill-group {
+  padding: 0.65rem;
+  border: 1px solid var(--line);
+  background: var(--bg-elev);
+}
+
+.xp-skill-groups .skill-group h4 {
+  margin-bottom: 0.5rem;
+  font-size: 0.82rem;
 }
 
 .experience-list {
@@ -883,10 +955,37 @@ a {
 
   .nav {
     min-height: 64px;
+    position: relative;
+  }
+
+  .nav-toggle {
+    display: inline-flex;
   }
 
   .nav-links {
     display: none;
+    position: absolute;
+    top: calc(100% + 0.4rem);
+    right: 0;
+    left: 0;
+    background: #ffffff;
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    box-shadow: 0 8px 24px rgba(31, 35, 40, 0.08);
+    padding: 0.4rem;
+    gap: 0.25rem;
+    flex-direction: column;
+    z-index: 30;
+  }
+
+  .nav-links.is-open {
+    display: flex;
+  }
+
+  .nav-links a {
+    display: block;
+    border-radius: 8px;
+    padding: 0.65rem 0.75rem;
   }
 
   .contact-grid {
@@ -894,6 +993,10 @@ a {
   }
 
   .skill-groups {
+    grid-template-columns: 1fr;
+  }
+
+  .xp-skill-groups {
     grid-template-columns: 1fr;
   }
 
