@@ -1,30 +1,27 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
   <head>
-  <!-- Metadados e assets globais -->
-  <meta charset="utf-8"/>
-  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-  <meta content="Portfólio de Iago Alves - Engenheiro de Software com atuação em desenvolvimento full stack, automação e integrações." name="description"
-  />
-  <title> Iago Alves | Portfólio UMC
-  </title>
-  <link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&amp;family=IBM+Plex+Sans:wght@400;500;600&amp;display=swap" rel="stylesheet"
-  /><link href="styles.css" rel="stylesheet"/></head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="Portfólio de Iago Alves - Engenheiro de Software com atuação em desenvolvimento full stack, automação e integrações." name="description"/>
+    <title>Iago Alves | Portfólio UMC</title>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&amp;family=IBM+Plex+Sans:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+    <link href="styles.css" rel="stylesheet" />
+  </head>
   <body>
-  <!-- Estrutura principal da página -->
-  <div aria-hidden="true" class="bg-grid">
-  </div>
-  <header class="site-header">
-   <!-- Navegação (desktop + menu hamburger no mobile) -->
-   <nav aria-label="Navegação principal" class="nav container">
-    <a class="brand" href="#topo"> Iago Alves
-    </a>
-    <button 
+   <header class="site-header">
+    <!-- Navegação (desktop + menu hamburger no mobile) -->
+    <nav aria-label="Navegação principal" class="nav container">
+    <a class="brand" href="#topo">Iago Alves</a>
+    <button
       class="nav-toggle"
       type="button"
       aria-controls="nav-links"
       aria-expanded="false"
-      aria-label="Abrir menu">
+      aria-label="Abrir menu"
+    >
       <span></span>
       <span></span>
       <span></span>
@@ -36,40 +33,66 @@
      <li><a href="#projetos">Projetos</a></li>
      <li><a href="#contatos">Contato</a></li>
     </ul>
-   </nav>
-  </header>
-  <main id="topo">
-   <!-- Hero / apresentação inicial -->
+    </nav>
+   </header>
+   <main id="topo">
+   <!-- apresentação inicial -->
    <section class="hero container">
+    <!-- Card principal -->
     <div class="hero-copy reveal">
      <p class="eyebrow">Portfólio UMC</p>
      <h1>Engenheiro de Software</h1>
-     <p class="hero-text">Engenheiro de Software com <strong>4 anos de experiência</strong> no setor financeiro, com atuação em <strong>desenvolvimento fullstack</strong>, automação de processos e integração de sistemas para <strong>operações de crédito</strong> e rotinas financeiras.</p>
+
+     <p class="hero-text">
+      Engenheiro de Software com <strong>4 anos de experiência</strong> no setor financeiro, com atuação em
+      <strong>desenvolvimento fullstack</strong>, automação de processos e integração de sistemas para
+      <strong>operações de crédito</strong> e rotinas financeiras.
+     </p>
+     
      <div class="hero-actions">
-      <a class="btn btn-primary" href="#experiencia"> Ver experiências
-      </a>
-      <a class="btn btn-secondary" href="#contatos"> Entrar em contato
-      </a>
+      <a class="btn btn-primary" href="#experiencia">Ver experiências</a>
+      <a class="btn btn-secondary" href="#contatos">Entrar em contato</a>
      </div>
     </div>
+
     <aside aria-label="Resumo profissional" class="hero-panel reveal reveal-delay">
-     <!-- Resumo rápido com dados e foco -->
+     <!-- Card de dados -->
      <div class="panel-card">
       <p class="panel-title">Dados</p>
       <ul class="meta-list">
-       <li><span>Nome</span> <strong>Iago Alves</strong></li>
-       <li><span>Cidade</span> <strong>Suzano / SP</strong></li>
-       <li><span>Curso</span> <strong>Sistemas da Informação</strong></li>
-       <li><span>Semestre</span> <strong>8º semestre</strong></li>
+       <li>
+        <span>Nome</span>
+        <strong>Iago Alves</strong>
+       </li>
+    
+       <li>
+        <span>Cidade</span>
+        <strong>Suzano / SP</strong>
+       </li>
+    
+       <li>
+        <span>Curso</span>
+        <strong>Sistemas da Informação</strong>
+       </li>
+    
+       <li>
+        <span>Semestre</span>
+        <strong>8º semestre</strong>
+       </li>
       </ul>
      </div>
+    
+     <!-- Card de foco profissional -->
      <div class="panel-card">
       <p class="panel-title">Foco profissional</p>
-      <p><strong>Desenvolvimento Full Stack</strong>, automação de processos, integração de APIs, análise de dados e soluções web para <strong>crédito e gestão financeira</strong>.</p>
+      <p>
+       <strong>Desenvolvimento Full Stack</strong>, automação de processos, integração de APIs, análise de dados e
+       soluções web para <strong>crédito e gestão financeira</strong>.
+      </p>
      </div>
     </aside>
    </section>
-   <!-- Sobre -->
+   <!-- Seção "Sobre você" -->
    <section class="section container" id="sobre">
     <div class="section-header reveal">
      <p class="eyebrow">Sobre você</p>
@@ -77,12 +100,25 @@
     </div>
     <div class="about-grid">
      <article class="card reveal">
-      <p><strong>Engenheiro de Software</strong> com <strong>4 anos de experiência</strong> no <strong>setor financeiro</strong>, atuando no <strong>desenvolvimento full stack</strong> de sistemas que sustentam <strong>operações de crédito</strong> e rotinas financeiras críticas.</p>
-      <p>Ao longo da carreira, atuei próximo a <strong>áreas de negócio</strong>, especialmente equipes de crédito e análise financeira, entendendo fluxos e regras operacionais para transformar necessidades reais em <strong>soluções técnicas aplicáveis à operação</strong>.</p>
-      <p>Tenho foco em construir ferramentas que <strong>automatizam processos</strong>, conectam sistemas e <strong>apoiam decisões</strong> com impacto direto no resultado da empresa.</p>
+      <p>
+       <strong>Engenheiro de Software</strong> com <strong>4 anos de experiência</strong> no
+       <strong>setor financeiro</strong>, atuando no <strong>desenvolvimento full stack</strong> de sistemas que
+       sustentam <strong>operações de crédito</strong> e rotinas financeiras críticas.
+      </p>
+    
+      <p>
+       Ao longo da carreira, atuei próximo a <strong>áreas de negócio</strong>, especialmente equipes de crédito e
+       análise financeira, entendendo fluxos e regras operacionais para transformar necessidades reais em
+       <strong>soluções técnicas aplicáveis à operação</strong>.
+      </p>
+    
+      <p>
+       Tenho foco em construir ferramentas que <strong>automatizam processos</strong>, conectam sistemas e
+       <strong>apoiam decisões</strong> com impacto direto no resultado da empresa.
+      </p>
      </article>
     </div>
-    <!-- Habilidades principais categorizadas -->
+    <!-- Cards de principais habilidades -->
     <article class="card skills-card reveal reveal-delay">
      <h3>Principais habilidades</h3>
      <div class="skill-groups">
@@ -97,6 +133,7 @@
         <li>CSS</li>
        </ul>
       </div>
+    
       <div class="skill-group">
        <h4>Back-end</h4>
        <ul class="chip-list">
@@ -108,6 +145,7 @@
         <li>Python</li>
        </ul>
       </div>
+    
       <div class="skill-group">
        <h4>Cloud (AWS)</h4>
        <ul class="chip-list">
@@ -119,6 +157,7 @@
         <li>Logs em produção</li>
        </ul>
       </div>
+    
       <div class="skill-group">
        <h4>Banco de dados</h4>
        <ul class="chip-list">
@@ -128,6 +167,7 @@
         <li>MongoDB</li>
        </ul>
       </div>
+    
       <div class="skill-group">
        <h4>Integrações</h4>
        <ul class="chip-list">
@@ -136,6 +176,7 @@
         <li>Integração entre serviços</li>
        </ul>
       </div>
+    
       <div class="skill-group">
        <h4>Versionamento</h4>
        <ul class="chip-list">
@@ -144,6 +185,7 @@
         <li>GitLab</li>
        </ul>
       </div>
+    
       <div class="skill-group">
        <h4>Automação</h4>
        <ul class="chip-list">
@@ -152,6 +194,7 @@
         <li>VBA</li>
        </ul>
       </div>
+    
       <div class="skill-group">
        <h4>Outros</h4>
        <ul class="chip-list">
@@ -163,19 +206,29 @@
      </div>
     </article>
    </section>
-   <!-- Linha do tempo horizontal (marcos principais) -->
+   
+   <!-- Seção "Linha do tempo" -->
    <section class="section container" id="linha-do-tempo">
     <div class="section-header reveal">
      <p class="eyebrow">Linha do tempo</p>
      <h2>Marcos da minha trajetória</h2>
     </div>
     <div class="timeline-wrap reveal">
-     <div aria-label="Linha do tempo profissional e acadêmica" class="timeline-horizontal" role="list"
+     <div
+      aria-label="Linha do tempo profissional e acadêmica"
+      class="timeline-horizontal"
+      role="list"
      >
+      <!-- Card da timeline: 2017 -->
       <article class="tl-item tl-up" role="listitem">
        <div class="tl-content">
-        <span class="tl-logo-wrap"><img alt="Logo Rancho da Jô" class="tl-logo" src="assets/logos/rancho-da-jo-removebg-preview.png"
-          /></span>
+        <span class="tl-logo-wrap">
+         <img
+          alt="Logo Rancho da Jô"
+          class="tl-logo"
+          src="assets/logos/rancho-da-jo-removebg-preview.png"
+         />
+        </span>
         <p class="tl-year">jan/17</p>
         <h3>Garçom</h3>
         <p class="tl-subtitle">Rancho da Jô</p>
@@ -184,9 +237,12 @@
        <div aria-hidden="true" class="tl-node">
        </div>
       </article>
+      <!-- Card da timeline: 2019 -->
       <article class="tl-item tl-down" role="listitem">
        <div class="tl-content">
-        <span class="tl-logo-wrap"><img alt="Logo Suzano" class="tl-logo" src="assets/logos/suzano-real.png"/></span>
+        <span class="tl-logo-wrap">
+         <img alt="Logo Suzano" class="tl-logo" src="assets/logos/suzano-real.png" />
+        </span>
         <p class="tl-year">jul/19</p>
         <h3>Auxiliar Administrativo</h3>
         <p class="tl-subtitle">Suzano S.A.</p>
@@ -195,9 +251,12 @@
        <div aria-hidden="true" class="tl-node">
        </div>
       </article>
+      <!-- Card da timeline: 2020 -->
       <article class="tl-item tl-up" role="listitem">
        <div class="tl-content">
-        <span class="tl-logo-wrap"><img alt="Logo Suzano" class="tl-logo" src="assets/logos/suzano-real.png"/></span>
+        <span class="tl-logo-wrap">
+         <img alt="Logo Suzano" class="tl-logo" src="assets/logos/suzano-real.png" />
+        </span>
         <p class="tl-year">out/20</p>
         <h3>Estagiário técnico</h3>
         <p class="tl-subtitle">Suzano S.A.</p>
@@ -206,9 +265,12 @@
        <div aria-hidden="true" class="tl-node">
        </div>
       </article>
+      <!-- Card da timeline: 2022 -->
       <article class="tl-item tl-down" role="listitem">
        <div class="tl-content">
-        <span class="tl-logo-wrap"><img alt="Logo Wipro" class="tl-logo" src="assets/logos/wipro-real.png"/></span>
+        <span class="tl-logo-wrap">
+         <img alt="Logo Wipro" class="tl-logo" src="assets/logos/wipro-real.png" />
+        </span>
         <p class="tl-year">mar/22</p>
         <h3>Analista de sistemas</h3>
         <p class="tl-subtitle">Wipro</p>
@@ -217,9 +279,12 @@
        <div aria-hidden="true" class="tl-node">
        </div>
       </article>
+      <!-- Card da timeline: 2023 -->
       <article class="tl-item tl-up" role="listitem">
        <div class="tl-content">
-        <span class="tl-logo-wrap"><img alt="Logo Itaú Unibanco" class="tl-logo" src="assets/logos/itau-real.png"/></span>
+        <span class="tl-logo-wrap">
+         <img alt="Logo Itaú Unibanco" class="tl-logo" src="assets/logos/itau-real.png" />
+        </span>
         <p class="tl-year">dez/23</p>
         <h3>Engenheiro de software</h3>
         <p class="tl-subtitle">Itaú Unibanco</p>
@@ -228,11 +293,17 @@
        <div aria-hidden="true" class="tl-node">
        </div>
       </article>
+      <!-- Card da timeline: fev/2025 (reconhecimento) -->
       <article class="tl-item tl-down" role="listitem">
        <div class="tl-content">
-        <span class="tl-logo-stack"><span class="tl-logo-wrap"><img alt="Logo Itaú Unibanco" class="tl-logo" src="assets/logos/itau-real.png"
-          /></span>
-         <span aria-hidden="true" class="tl-icon-wrap"><img alt="" class="tl-icon" src="assets/icons/trophy.svg"/></span></span>
+        <span class="tl-logo-stack">
+         <span class="tl-logo-wrap">
+          <img alt="Logo Itaú Unibanco" class="tl-logo" src="assets/logos/itau-real.png" />
+         </span>
+         <span aria-hidden="true" class="tl-icon-wrap">
+          <img alt="" class="tl-icon" src="assets/icons/trophy.svg" />
+         </span>
+        </span>
         <p class="tl-year">fev/25</p>
         <h3>Reconhecimento por desempenho</h3>
         <p class="tl-subtitle">Itaú Unibanco</p>
@@ -241,9 +312,12 @@
        <div aria-hidden="true" class="tl-node">
        </div>
       </article>
+      <!-- Card da timeline: dez/2025 -->
       <article class="tl-item tl-up" role="listitem">
        <div class="tl-content">
-        <span class="tl-logo-wrap tl-logo-wrap-sarfaty"><img alt="Logo Grupo Sarfaty" class="tl-logo" src="assets/logos/sarfaty-real.jpeg"/></span>
+        <span class="tl-logo-wrap tl-logo-wrap-sarfaty">
+         <img alt="Logo Grupo Sarfaty" class="tl-logo" src="assets/logos/sarfaty-real.jpeg" />
+        </span>
         <p class="tl-year">dez/25</p>
         <h3>Engenheiro de software pleno</h3>
         <p class="tl-subtitle">Grupo Sarfaty</p>
@@ -255,7 +329,8 @@
      </div>
     </div>
    </section>
-   <!-- Experiência profissional (cards expansíveis) -->
+   
+   <!-- Seção "Experiência profissional" (cards expansíveis) -->
    <section class="section container" id="experiencia">
     <div class="section-header reveal">
      <p class="eyebrow">Experiência profissional</p>
@@ -263,6 +338,8 @@
     </div>
     <div class="experience-list">
      <!-- Cada item usa details/summary para expandir/recolher -->
+   
+     <!-- Card de experiência: Grupo Sarfaty -->
      <details class="xp-card reveal" open="">
       <summary class="xp-summary">
        <div class="xp-logo-wrap xp-logo-sarfaty">
@@ -275,6 +352,7 @@
        </div>
        <span aria-hidden="true" class="xp-toggle"></span>
       </summary>
+   
       <div class="xp-body">
        <div class="xp-block">
         <h4>Descrição</h4>
@@ -284,6 +362,7 @@
          <li>Meu trabalho contribui diretamente para a <strong>eficiência operacional</strong> e para a confiabilidade das informações utilizadas nas decisões da empresa.</li>
         </ul>
        </div>
+   
        <div class="xp-block xp-tech-group">
         <div class="skill-groups xp-skill-groups">
          <div class="skill-group">
@@ -297,6 +376,7 @@
            <li>Prisma</li>
           </ul>
          </div>
+   
          <div class="skill-group">
           <h4>Front-end</h4>
           <ul class="chip-list">
@@ -306,6 +386,7 @@
            <li>CSS</li>
           </ul>
          </div>
+   
          <div class="skill-group">
           <h4>Cloud</h4>
           <ul class="chip-list">
@@ -317,6 +398,7 @@
            <li>Lambda</li>
           </ul>
          </div>
+   
          <div class="skill-group">
           <h4>Integrações</h4>
           <ul class="chip-list">
@@ -329,6 +411,8 @@
        </div>
       </div>
      </details>
+   
+     <!-- Card de experiência: Itaú Unibanco -->
      <details class="xp-card reveal reveal-delay">
       <summary class="xp-summary">
        <div class="xp-logo-wrap">
@@ -341,6 +425,7 @@
        </div>
        <span aria-hidden="true" class="xp-toggle"></span>
       </summary>
+   
       <div class="xp-body">
        <div class="xp-block">
         <h4>Descrição</h4>
@@ -350,6 +435,7 @@
          <li>Meu trabalho contribuiu diretamente para <strong>tomadas de decisão</strong> em uma das principais áreas do banco.</li>
         </ul>
        </div>
+   
        <div class="xp-block xp-tech-group">
         <div class="skill-groups xp-skill-groups">
          <div class="skill-group">
@@ -362,6 +448,7 @@
            <li>Python</li>
           </ul>
          </div>
+   
          <div class="skill-group">
           <h4>Front-end</h4>
           <ul class="chip-list">
@@ -372,6 +459,7 @@
            <li>CSS</li>
           </ul>
          </div>
+   
          <div class="skill-group">
           <h4>Prototipação</h4>
           <ul class="chip-list">
@@ -380,6 +468,7 @@
          </div>
         </div>
        </div>
+   
        <div class="xp-block xp-block-full">
         <h4>Destaques</h4>
         <ul class="feature-list">
@@ -389,6 +478,8 @@
        </div>
       </div>
      </details>
+   
+     <!-- Card de experiência: Wipro -->
      <details class="xp-card reveal">
       <summary class="xp-summary">
        <div class="xp-logo-wrap">
@@ -401,6 +492,7 @@
        </div>
        <span aria-hidden="true" class="xp-toggle"></span>
       </summary>
+   
       <div class="xp-body">
        <div class="xp-block">
         <h4>Descrição</h4>
@@ -408,6 +500,7 @@
          <li>Atuei no time de Engenharia TI do Itaú Unibanco, desenvolvendo e sustentando <strong>ferramentas estratégicas</strong> que otimizaram os processos de análise e concessão de crédito para grandes empresas.</li>
         </ul>
        </div>
+   
        <div class="xp-block xp-tech-group">
         <div class="skill-groups xp-skill-groups">
          <div class="skill-group">
@@ -419,6 +512,7 @@
            <li>Python</li>
           </ul>
          </div>
+   
          <div class="skill-group">
           <h4>Front-end</h4>
           <ul class="chip-list">
@@ -428,6 +522,7 @@
            <li>CSS</li>
           </ul>
          </div>
+   
          <div class="skill-group">
           <h4>Prototipação</h4>
           <ul class="chip-list">
@@ -438,6 +533,8 @@
        </div>
       </div>
      </details>
+   
+     <!-- Card de experiência: Suzano (Estágio Técnico) -->
      <details class="xp-card reveal reveal-delay">
       <summary class="xp-summary">
        <div class="xp-logo-wrap">
@@ -450,6 +547,7 @@
        </div>
        <span aria-hidden="true" class="xp-toggle"></span>
       </summary>
+   
       <div class="xp-body">
        <div class="xp-block">
         <h4>Descrição</h4>
@@ -457,6 +555,7 @@
          <li>Atuei no time de Compras de Insumos auxiliando os analistas da área. No dia a dia desenvolvia <strong>automações com Python e VBA</strong> para facilitar a rotina operacional.</li>
         </ul>
        </div>
+   
        <div class="xp-block xp-tech-group">
         <div class="skill-groups xp-skill-groups">
          <div class="skill-group">
@@ -476,6 +575,8 @@
        </div>
       </div>
      </details>
+   
+     <!-- Card de experiência: Suzano (Auxiliar Administrativo) -->
      <details class="xp-card reveal">
       <summary class="xp-summary">
        <div class="xp-logo-wrap">
@@ -488,6 +589,7 @@
        </div>
        <span aria-hidden="true" class="xp-toggle"></span>
       </summary>
+   
       <div class="xp-body">
        <div class="xp-block">
         <h4>Descrição</h4>
@@ -497,6 +599,8 @@
        </div>
       </div>
      </details>
+   
+     <!-- Card de experiência: Rancho da Jô -->
      <details class="xp-card reveal reveal-delay">
       <summary class="xp-summary">
        <div class="xp-logo-wrap">
@@ -509,6 +613,7 @@
        </div>
        <span aria-hidden="true" class="xp-toggle"></span>
       </summary>
+   
       <div class="xp-body">
        <div class="xp-block">
         <h4>Descrição</h4>
@@ -520,6 +625,7 @@
      </details>
     </div>
    </section>
+   
    <!-- Projeto em destaque -->
    <section class="section container" id="projetos">
     <div class="section-header reveal">
@@ -527,12 +633,24 @@
      <h2>Módulo de autenticação e administração de usuários</h2>
     </div>
     <article class="project-card reveal">
+     <!-- Card de projeto principal -->
      <div class="project-top">
       <p class="project-badge">Concluído • Equipe</p>
-      <a class="project-link" href="https://github.com/oliveira-iago-temp/sistema-autenticacao-usuarios" rel="noreferrer" target="_blank"> Repositório no GitHub
+      <a
+       class="project-link"
+       href="https://github.com/oliveira-iago-temp/sistema-autenticacao-usuarios"
+       rel="noreferrer"
+       target="_blank"
+      >
+       Repositório no GitHub
       </a>
      </div>
-     <p class="project-description">Componente de autenticação e administração de usuários para integração em outros sistemas, com foco em <strong>segurança</strong>, <strong>LGPD</strong> e boas práticas de programação.</p>
+   
+     <p class="project-description">
+      Componente de autenticação e administração de usuários para integração em outros sistemas, com foco em
+      <strong>segurança</strong>, <strong>LGPD</strong> e boas práticas de programação.
+     </p>
+   
      <div class="project-grid">
       <div>
        <h3>Tecnologias</h3>
@@ -545,6 +663,7 @@
         <li>HTTPS</li>
        </ul>
       </div>
+   
       <div>
        <h3>Destaques</h3>
        <ul class="feature-list">
@@ -556,6 +675,7 @@
      </div>
     </article>
    </section>
+   
    <!-- Contatos -->
    <section class="section container" id="contatos">
     <div class="section-header reveal">
@@ -563,31 +683,48 @@
      <h2>Canais para contato e redes</h2>
     </div>
     <div class="contact-grid">
+   
+     <!-- Card de contato: GitHub -->
      <a class="contact-card reveal" href="https://github.com/oliveira-iago-temp/" rel="noreferrer" target="_blank">
-      <span class="contact-label">GitHub</span> <strong>oliveira-iago-temp</strong> <span class="contact-meta">Perfil obrigatório da atividade</span>
+      <span class="contact-label">GitHub</span>
+      <strong>oliveira-iago-temp</strong>
+      <span class="contact-meta">Perfil obrigatório da atividade</span>
      </a>
+     
+     <!-- Card de contato: LinkedIn -->
      <a class="contact-card reveal reveal-delay" href="https://linkedin.com/in/iagoalvesoliveira" rel="noreferrer" target="_blank">
-      <span class="contact-label">LinkedIn</span> <strong>/in/iagoalvesoliveira</strong> <span class="contact-meta">Perfil profissional</span>
+      <span class="contact-label">LinkedIn</span>
+      <strong>/in/iagoalvesoliveira</strong>
+      <span class="contact-meta">Perfil profissional</span>
      </a>
+     
+     <!-- Card de contato: E-mail -->
      <a class="contact-card reveal" href="mailto:iagoleonardo.il51@gmail.com">
-      <span class="contact-label">E-mail</span> <strong>iagoleonardo.il51@gmail.com</strong> <span class="contact-meta">Contato direto</span>
+      <span class="contact-label">E-mail</span>
+      <strong>iagoleonardo.il51@gmail.com</strong>
+      <span class="contact-meta">Contato direto</span>
      </a>
+     
+     <!-- Card de contato: WhatsApp/Telefone -->
      <a class="contact-card reveal reveal-delay" href="tel:+5511991152402">
-      <span class="contact-label">WhatsApp / Telefone</span> <strong>(11) 9.9115-2402</strong> <span class="contact-meta">Suzano / SP</span>
+      <span class="contact-label">WhatsApp / Telefone</span>
+      <strong>(11) 9.9115-2402</strong>
+      <span class="contact-meta">Suzano / SP</span>
      </a>
     </div>
    </section>
-  </main>
-  <!-- Rodapé -->
-  <footer class="site-footer">
-   <div class="container footer-inner reveal">
-    <p>Desenvolvido por Iago Alves</p>
-    <a href="#topo"> Voltar ao topo
-    </a>
-   </div>
-  </footer>
-  <!-- Interações: scroll reveal + menu mobile -->
-  <script src="script.js">
-  </script>
+   </main>
+   
+   <!-- Rodapé -->
+   <footer class="site-footer">
+    <div class="container footer-inner reveal">
+     <p>Desenvolvido por Iago Alves</p>
+     <a href="#topo">Voltar ao topo</a>
+    </div>
+   </footer>
+   
+   <!-- Interações: scroll reveal + menu mobile -->
+   <script src="script.js">
+   </script>
  </body>
 </html>
