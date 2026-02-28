@@ -2,6 +2,9 @@ const revealItems = document.querySelectorAll(".reveal");
 const navToggle = document.querySelector(".nav-toggle");
 const navLinks = document.querySelector(".nav-links");
 const navAnchorLinks = document.querySelectorAll(".nav-links a");
+const experienceInnerAccordions = document.querySelectorAll(
+  ".xp-desc-card, .xp-tech-card"
+);
 
 // Fallback para navegadores sem IntersectionObserver.
 const showImmediately = () => {
@@ -54,4 +57,38 @@ if (navToggle && navLinks) {
       setMenuState(false);
     }
   });
+}
+
+if (experienceInnerAccordions.length > 0) {
+  const mobileQuery = window.matchMedia("(max-width: 720px)");
+
+  // Salva o estado padrão definido no HTML para restaurar no mobile.
+  experienceInnerAccordions.forEach((item) => {
+    item.dataset.defaultOpen = item.hasAttribute("open") ? "true" : "false";
+  });
+
+  const syncExperienceAccordions = () => {
+    const isMobile = mobileQuery.matches;
+
+    experienceInnerAccordions.forEach((item) => {
+      if (!isMobile) {
+        item.setAttribute("open", "");
+        return;
+      }
+
+      if (item.dataset.defaultOpen === "true") {
+        item.setAttribute("open", "");
+      } else {
+        item.removeAttribute("open");
+      }
+    });
+  };
+
+  syncExperienceAccordions();
+
+  if (typeof mobileQuery.addEventListener === "function") {
+    mobileQuery.addEventListener("change", syncExperienceAccordions);
+  } else {
+    mobileQuery.addListener(syncExperienceAccordions);
+  }
 }

@@ -1147,6 +1147,26 @@ a {
   }
 }
 
+@media (min-width: 721px) {
+  .xp-tech-toggle {
+    display: none;
+  }
+
+  .xp-desc-summary,
+  .xp-tech-card-summary {
+    cursor: default;
+    pointer-events: none;
+  }
+
+  .xp-desc-content {
+    display: block !important;
+  }
+
+  .xp-tech-card .chip-list {
+    display: flex !important;
+  }
+}
+
 @media (max-width: 720px) {
   .container {
     width: min(calc(100% - 2.4rem), var(--container));
