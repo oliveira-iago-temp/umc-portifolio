@@ -332,6 +332,19 @@ a {
   letter-spacing: -0.03em;
 }
 
+.section-kicker {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.section-kicker-icon {
+  width: 16px;
+  height: 16px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
 .about-grid {
   display: grid;
   grid-template-columns: 1fr;
@@ -1017,6 +1030,19 @@ a {
 .contact-label {
   color: var(--muted);
   font-size: 0.85rem;
+}
+
+.contact-head {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.contact-icon {
+  width: 16px;
+  height: 16px;
+  object-fit: contain;
+  flex-shrink: 0;
 }
 
 .contact-card strong {
