@@ -12,6 +12,10 @@ O site foi construído com layout responsivo, seções semânticas e animações
 - CSS3 (layout responsivo, estilos e animações)
 - JavaScript (interatividade leve / animações ao rolar)
 
+## Site publicado
+
+- https://oliveira-iago-temp.github.io/umc-portifolio/
+
 ## Estrutura do projeto
 
 - `index.html`
