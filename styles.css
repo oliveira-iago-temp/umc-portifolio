@@ -315,6 +315,11 @@ a {
 
 .section {
   padding: 2rem 0;
+  scroll-margin-top: 84px;
+}
+
+#home {
+  scroll-margin-top: 84px;
 }
 
 .section-header {
@@ -774,6 +779,8 @@ a {
   column-gap: 0.35rem;
   row-gap: 0.1rem;
   align-content: start;
+  transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease;
+  transform-origin: center;
 }
 
 .tl-content h3 {
@@ -1148,6 +1155,13 @@ a {
 }
 
 @media (min-width: 721px) {
+  .tl-item .tl-content:hover {
+    transform: scale(1.04);
+    border-color: #b6c2cf;
+    box-shadow: 0 6px 18px rgba(31, 35, 40, 0.12);
+    z-index: 2;
+  }
+
   .xp-tech-toggle {
     display: none;
   }

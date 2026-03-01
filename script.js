@@ -2,6 +2,7 @@ const revealItems = document.querySelectorAll(".reveal");
 const navToggle = document.querySelector(".nav-toggle");
 const navLinks = document.querySelector(".nav-links");
 const navAnchorLinks = document.querySelectorAll(".nav-links a");
+const experienceCards = document.querySelectorAll(".xp-card");
 const experienceInnerAccordions = document.querySelectorAll(
   ".xp-desc-card, .xp-tech-card"
 );
@@ -91,4 +92,122 @@ if (experienceInnerAccordions.length > 0) {
   } else {
     mobileQuery.addListener(syncExperienceAccordions);
   }
+}
+
+if (experienceCards.length > 0) {
+  const prefersReducedMotion = window.matchMedia(
+    "(prefers-reduced-motion: reduce)"
+  ).matches;
+
+  const getCardBody = (card) => card.querySelector(".xp-body");
+
+  const setBodyBaseStyle = (body) => {
+    if (!body) return;
+    body.style.overflow = "hidden";
+  };
+
+  const openCard = (card) => {
+    const body = getCardBody(card);
+    if (!body) {
+      card.setAttribute("open", "");
+      return;
+    }
+
+    if (prefersReducedMotion) {
+      card.setAttribute("open", "");
+      body.style.height = "auto";
+      return;
+    }
+
+    if (card.dataset.animating === "true") return;
+    card.dataset.animating = "true";
+
+    card.setAttribute("open", "");
+    setBodyBaseStyle(body);
+    body.style.transition = "none";
+    body.style.height = "0px";
+    body.getBoundingClientRect();
+
+    const targetHeight = `${body.scrollHeight}px`;
+    body.style.transition = "height 240ms ease";
+    body.style.height = targetHeight;
+
+    const onEnd = () => {
+      body.style.transition = "";
+      body.style.height = "auto";
+      card.dataset.animating = "false";
+      body.removeEventListener("transitionend", onEnd);
+    };
+
+    body.addEventListener("transitionend", onEnd);
+  };
+
+  const closeCard = (card) => {
+    if (!card.hasAttribute("open")) return;
+    const body = getCardBody(card);
+    if (!body) {
+      card.removeAttribute("open");
+      return;
+    }
+
+    if (prefersReducedMotion) {
+      card.removeAttribute("open");
+      body.style.height = "";
+      return;
+    }
+
+    if (card.dataset.animating === "true") return;
+    card.dataset.animating = "true";
+
+    setBodyBaseStyle(body);
+    const startHeight = `${body.scrollHeight}px`;
+    body.style.transition = "none";
+    body.style.height = startHeight;
+    body.getBoundingClientRect();
+
+    body.style.transition = "height 220ms ease";
+    body.style.height = "0px";
+
+    const onEnd = () => {
+      card.removeAttribute("open");
+      body.style.transition = "";
+      body.style.height = "";
+      card.dataset.animating = "false";
+      body.removeEventListener("transitionend", onEnd);
+    };
+
+    body.addEventListener("transitionend", onEnd);
+  };
+
+  experienceCards.forEach((card) => {
+    const summary = card.querySelector(":scope > .xp-summary");
+    const body = getCardBody(card);
+    setBodyBaseStyle(body);
+
+    if (body) {
+      if (card.hasAttribute("open")) {
+        body.style.height = "auto";
+      } else {
+        body.style.height = "0px";
+      }
+    }
+
+    if (!summary) return;
+
+    summary.addEventListener("click", (event) => {
+      event.preventDefault();
+
+      if (card.hasAttribute("open")) {
+        closeCard(card);
+        return;
+      }
+
+      experienceCards.forEach((otherCard) => {
+        if (otherCard === card) return;
+        closeCard(otherCard);
+      });
+
+      openCard(card);
+    });
+  });
 }
